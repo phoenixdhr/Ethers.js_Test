@@ -10,13 +10,15 @@ boton.addEventListener("click", async () => {
   const provider = new ethers.providers.Web3Provider(window.ethereum);
 
   // LOGING CON METAMASK
-  await provider.send("eth_requestAccounts", []);
+  const metamaskx = await provider.send("eth_requestAccounts", []);
 
   // SE OBTIENE EL FIRMANTE COMO OBJETO
   const signer =  provider.getSigner();
   // SE OBTIENE LA DIRECCION QUE ESTA CONECTADA
   const address = await signer.getAddress()
 
+  console.log("metamaskx=> ", metamaskx);
+  console.log("typeof metamaskx=> ", typeof(metamaskx));
   console.log("signer => ", signer);
   console.log("address => ", address );
   console.log("provider => ", provider);

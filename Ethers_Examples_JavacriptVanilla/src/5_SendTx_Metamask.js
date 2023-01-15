@@ -9,8 +9,9 @@ boton.addEventListener("click", async () => {
   // Creamos el proveedor de nodos, en este caso metamasks
   const provider = new ethers.providers.Web3Provider(window.ethereum);
 
-  // Nos logeamos con metamask, es una promesa que espera a que nos conectemos con metamask
-  await provider.send("eth_requestAccounts", []);
+  // Nos logeamos con metamask, es una promesa que espera a que nos conectemos con metamask,
+  // retorna un objeto con datos de la wallet
+  const metamask = await provider.send("eth_requestAccounts", []);
 
   //Obtenemos el firmante, en este caso la address con la que se conecto metamask
   const signer = provider.getSigner();

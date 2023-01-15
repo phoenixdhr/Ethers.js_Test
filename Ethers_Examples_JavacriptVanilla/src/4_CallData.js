@@ -9,8 +9,6 @@ boton.addEventListener("click", async () => {
     "https://goerli.infura.io/v3/fed75129378b4181b5cbb6b24066dd16"
   );
 
-  const signer = provider.getSigner();
-
     // Se obtiene el último numero de bloque
   const lBlock = await provider.getBlockNumber();
   console.log(lBlock);

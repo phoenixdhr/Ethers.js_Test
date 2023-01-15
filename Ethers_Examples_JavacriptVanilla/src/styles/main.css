@@ -1,0 +1,18 @@
+.contratoDai{
+
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+}
+
+
+.resulContractDai {
+    margin: 0px;
+    padding-left: 25px;
+
+}
+
+#contractDaiSection{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
