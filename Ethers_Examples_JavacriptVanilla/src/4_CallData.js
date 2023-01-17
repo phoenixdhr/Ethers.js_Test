@@ -21,7 +21,6 @@ boton.addEventListener("click", async () => {
     // Se tranforma el json (balance) se transforma a un formato decimal
   const balanceETH = ethers.utils.formatEther(balance)
     console.log(balanceETH);
-
     // se transforma un numero decimal a formato json, el numero debe enviarse como string
     const numberjson = ethers.utils.parseEther('1.0')
     console.log(numberjson);

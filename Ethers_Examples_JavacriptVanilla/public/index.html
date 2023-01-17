@@ -5,35 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../src/styles/main.css">
   </head>
 
   <body>
-    <div>
-      <button id="boton1">1 Conect Metamask</button>
-    </div>
+        <div>
+          <button id="boton1">1 Conect Metamask</button>
+        </div>
 
-    <div>
-      <button id="boton2">2 Conect Metamask sin Ethers</button>
-    </div>
+        <div>
+          <button id="boton2">2 Conect Metamask sin Ethers</button>
+        </div>
 
-    <div>
-      <button id="boton3">3 Conect RPC</button>
-    </div>
+        <div>
+          <button id="boton3">3 Conect RPC</button>
+        </div>
 
-    <div>
-      <button id="boton4">4 Call Data</button>
-    </div>
+        <div>
+          <button id="boton4">4 Call Data</button>
+        </div>
 
-    <div>
-      <button id="boton5">5 Send Tx - Using Metamask</button>
-    </div>
+        <div>
+          <button id="boton5">5 Send Tx - Using Metamask</button>
+        </div>
 
-    <div>
-      <button id="boton6">6 Send Tx - Using RPC</button>
-    </div>
-    <div>
-      <button id="boton7">7 Send Tx - Using RPC y .env</button>
-    </div>
+        <div>
+          <button id="boton6">6 Send Tx - Using RPC</button>
+        </div>
+        <div>
+          <button id="boton7">7 Send Tx - Using RPC y .env</button>
+        </div>
+
+
+    <section id="contractDaiSection">
+        <div class="contratoDai">
+          <button class="Dainame">8 Dai Contract - Funciones VIEW</button>
+        </div>
+
+        <div class="contratoDai"> 
+          <p class="resulContractDai">name: </p>  
+          <p id="nameDOM" class="resulContractDai"></p>
+        </div>
+        <div class="contratoDai">
+          <p class="resulContractDai">symbol: </p>  
+          <p id="symbolDOM" class="resulContractDai"></p>
+        </div>
+
+        <div class="contratoDai">
+          <p class="resulContractDai">balanceof: </p>  
+          <p id="balanceofDOM" class="resulContractDai"></p>
+        </div>
+
+        <div>
+            <form action="">
+              <button class="Daitransfer">10 Enviar Link </button>
+              <label for="">address</label>
+              <input type="text">
+              <label for="">value</label>
+              <input type="number">
+
+            </form>
+          
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
   </body>
 
   <!-- <script src="./metamaskConnect.js" type="module"></script>
@@ -45,5 +89,4 @@
   <script src="./SendTx-RPC_.env.js" ></script> -->
 
   <script src="../dist/main.js"></script>
-
 </html>
