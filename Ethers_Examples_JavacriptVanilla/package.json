@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@web3auth/modal": "^4.2.3",
     "dotenv": "^16.0.3",
     "ethers": "^5.7.2"
   },

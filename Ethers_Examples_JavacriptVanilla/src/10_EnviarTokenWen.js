@@ -1,7 +1,3 @@
-// const addressDOM =document.getElementById("address")
-// const botonDOM =document.querySelector("#Daitransfer")
-// botonDOM.addEventListener("click", ()=>console.log(addressDOM.value) )
-
 const ethers = require("ethers")
 
 const provider = new ethers.providers.JsonRpcProvider(process.env.API)

@@ -25,6 +25,8 @@ const contractWithWallet = contract.connect(wallet);
 
 console.log("la direccion del contrato es => ",contract.address);
 
+
+
 async function main (){
     
     const balanceSender1 = await contract.balanceOf(account1)
