@@ -1,4 +1,4 @@
-.contratoDai{
+.contratoDai, .firmaMensaje{
 
     display: flex;
     flex-direction: row;
@@ -12,7 +12,7 @@
 
 }
 
-#contractDaiSection{
+#contractDaiSection, #singSection{
     padding-top: 10px;
     padding-bottom: 10px;
 }

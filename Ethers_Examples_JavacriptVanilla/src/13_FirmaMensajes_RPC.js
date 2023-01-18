@@ -27,6 +27,7 @@ async function firma() {
     // en la funcion .signMessage(hash)
     const signature_pepe = await wallet.signMessage(hash1_pepe);
     console.log("firma pepe ",signature_pepe);
+    //0x4485b9b34138ba8a2d02ea462f502b5e7ba321f4854e1467088d680fe738632271d8ce22dab4eba6d259ce934c03b56afc03bf3ef15bb6464f05507407dee0501c
     
     /////////////////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////
@@ -43,13 +44,13 @@ async function firma() {
 
     const hash1_fernando_Bytes = ethers.utils.arrayify(hash1_fernando);
     // This array representation is 32 bytes long
-    // Uint8Array [ 221, 242, 82, 173, 27, 226, 200, 155, 105, 194, 176, 104, 252, 55, 141, 170, 149, 43, 167, 241, 99, 196, 161, 22, 40, 245, 90, 77, 245, 35, 179, 239 ]
+    // Uint8Array [ 102,  15,  27,  82,  64, 212, 246, 205, 37, 250, 219, 137, 147, 64, 202, 204, 209, 146,  85, 251, 253, 113,  58, 218, 27, 182, 180,  80, 149,  10, 209, 183 ]
     console.log("hash1 fernando en bytes => ",hash1_fernando_Bytes)
     
     // To sign a hash, you most often want to sign the bytes
     const signature_fernando = await wallet.signMessage(hash1_fernando_Bytes);
-    // '0x7b03d0690027e3dd74513772db259a994837631922c82e4d0e3ce995e163adf26a94e7dd7cac9f6bb2c3f8e409b4bdf158baef5f510356f7bf418d38b4ee0fb71b'
     console.log("signature_fernando=> ",signature_fernando);
+    // 0x0ed49e9065625dc6b72b181eb21f0cac23a83c330634a319ed87dbc83414b28b349c2eebfd262562f55b782feff0891b3feec9caa3c34f38ee795e230d6ac3741c
 
 // Las firmas se pueden verificar con ECDSA, una libreria de Openzeppelin
 }

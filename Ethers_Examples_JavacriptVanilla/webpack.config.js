@@ -3,6 +3,7 @@ const path = require("path")
 
 // se crea un objeto exports, para exportarlo con una configuracion deseada
 const Dotenv = require('dotenv-webpack');
+// const Buffer = require('buffer/').Buffer;
 
 module.exports = {
 	entry: "./src/index.js", // punto de entrada
@@ -10,9 +11,13 @@ module.exports = {
 		path: path.resolve(__dirname,"dist"), //retorna la ruta del directorio y el archivo donde se guarda main.js
 		filename: "main.js"}, // punto de salida
 	resolve: {
-		extensions :[".js"]  // extenciones con las que va trabajar el proyecto,
+		extensions :[".js"],  // extenciones con las que va trabajar el proyecto,
+		// fallback: {
+        //     buffer: require.resolve('buffer/'),
+        // },
 	},	
 	plugins:[
-		new Dotenv()
+		new Dotenv(),
+		// new Buffer()
 	]
 }
