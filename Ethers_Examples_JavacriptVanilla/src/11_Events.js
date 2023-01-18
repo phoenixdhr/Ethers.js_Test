@@ -11,6 +11,7 @@ const ABI_LINK =[
 ]
 
 const daiContract = new ethers.Contract(addressContractLINK,ABI_LINK, provider)
+const myAddress = "0x64604f15280eA4576Fc86CC8a5300635b32f3Ab0";
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -32,8 +33,7 @@ daiContract.on("Transfer", (from, to, amount) => {
 
 
 // A filter for when a specific address receives tokens
-const myAddress = "0x64604f15280eA4576Fc86CC8a5300635b32f3Ab0";
-const filter = daiContract.filters.Transfer(null, null)
+const filter = daiContract.filters.Transfer(myAddress, null)
 console.log(filter);
 // {
 //   address: 'dai.tokens.ethers.eth',
@@ -64,3 +64,9 @@ async function main() {
 main()
 
 
+
+// List all transfers sent in the last 1000 blocks
+async function main2() {
+    await daiContract.queryFilter(filterFrom, -100)
+    main()
+}
