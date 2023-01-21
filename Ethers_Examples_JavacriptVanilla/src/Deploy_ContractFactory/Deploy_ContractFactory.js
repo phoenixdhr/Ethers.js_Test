@@ -299,15 +299,22 @@ const abi = [
   },
 ];
 
-const contracFactory = new ethers.ContractFactory(abi,bytecode,wallet)
+const contractFactory = new ethers.ContractFactory(abi,bytecode,wallet)
+
+
+
+
+
+
 
 async function main() {
-    const contactDeployed = await contracFactory.deploy("Titan","TNT")    
+    const contactDeployed = await contractFactory.deploy("Titan","TNT")    
     const tx = await contactDeployed.deployTransaction.wait()
 
 
     console.log("address del contrato desplegado => ", contactDeployed.address);
-    console.log(tx)
+    console.log("TRANSACCION ====>",tx)
+
 }
 
 main()
