@@ -2,14 +2,12 @@ const ethers = require("ethers");
 const fs = require('fs');
 require("dotenv").config()
 
-
 const jsonString = fs.readFileSync("./tokenTitan.json", 'utf-8');
 // console.log(jsonString);
 
 const provider = new ethers.providers.JsonRpcProvider(process.env.API);
 
 const walletSeed = ethers.Wallet.fromMnemonic(process.env.KEY);
-
 
 const wallet = walletSeed.connect(provider);
 
