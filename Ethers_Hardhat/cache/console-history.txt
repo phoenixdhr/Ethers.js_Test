@@ -1,0 +1,23 @@
+await x.getBalance()
+await x.getBalanceof()
+x.getBalanceof()
+x.address
+await x.getBalance()
+x.getBalance()
+x.getBalance
+x
+x=await ethers.getSigner()
+await ethers.getSigner()
+await ethers.getSigner().getBalance()
+ethers.getSigner().getBalance()
+provider.getbalance()
+w.getBalance
+w.balance
+w.balance()
+w =0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+w1.address
+ethers.signers
+clean
+clear()
+clear
+ethers
