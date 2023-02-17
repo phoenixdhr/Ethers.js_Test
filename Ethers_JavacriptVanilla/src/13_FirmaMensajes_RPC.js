@@ -17,8 +17,13 @@ async function firma() {
 
     // obtenemos el hash del mensaje "pepe"
     const mensaje = "pepe"
+
     const hash1_pepe =keccak256(mensaje)
-    console.log("hash1=> ",hash1_pepe)
+    const hash2_pepe = ethers.utils.id(mensaje)
+
+
+    // hash1_pepe == hash2_pepe
+
     // Hash pepe en string "0x5d533775be30959f4e2d96c968120ecf6c1f1036d20bc316b593721385f1c1e3"
     // la funcion keccak256 retorna una cadena de bytes del hash
     // <Buffer 5d 53 37 75 be 30 95 9f 4e 2d 96 c9 68 12 0e cf 6c 1f 10 36 d2 0b c3 16 b5 93 72 13 85 f1 c1 e3>
